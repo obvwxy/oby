@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brilian Oby — Profil Singkat</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#0ea5a4;--muted:#9aa6b2;color-scheme:dark}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#061426 0%, #071026 60%);color:#e6f2f1;line-height:1.45}
+    .wrap{max-width:900px;margin:32px auto;padding:20px}
+    header{display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{display:flex;flex-direction:column}
+    h1{font-size:1.6rem;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    nav{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:12px;color:inherit;text-decoration:none;font-weight:600}
+    .btn:focus{outline:3px solid rgba(14,165,164,0.18)}
+    main{margin-top:20px;display:grid;grid-template-columns:1fr;gap:16px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    ul{padding-left:18px;margin:8px 0}
+    a.school-link{display:inline-block;margin:6px 0;color:var(--accent);text-decoration:underline}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:0.9rem}
+    /* small screens */
+    @media (max-width:700px){.grid-2{grid-template-columns:1fr}.brand{align-items:flex-start}}
+    /* interactive highlight */
+    .active{box-shadow:0 8px 28px rgba(14,165,164,0.08);border-color:rgba(14,165,164,0.22)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="brand">
+        <h1>Brilian Oby</h1>
+        <p class="lead">Siswa: SMKN 1 KEDIRI — Kelas 11, Jurusan: Teknik Komputer &amp; Jaringan (TKJ)</p>
+      </div>
+      <div aria-hidden="true">
+        <!-- intentionally no profile photo as requested -->
+      </div>
+    </header>
+
+    <nav aria-label="Navigasi halaman">
+      <a class="btn" href="#about">Tentang</a>
+      <a class="btn" href="#pendidikan">Pendidikan</a>
+      <a class="btn" href="#keahlian">Keahlian & Hobi</a>
+      <a class="btn" href="#kontak">Kontak Sekolah</a>
+      <a class="btn" href="#tkj">Tentang TKJ</a>
+      <a class="btn" href="#sekolah-links">Tautan Sekolah</a>
+    </nav>
+
+    <main>
+      <section id="about" class="card" tabindex="0">
+        <h2>Halo — Saya Brilian Oby</h2>
+        <p>Saya seorang pelajar SMKN 1 Kediri (Kelas 11) di jurusan Teknik Komputer &amp; Jaringan. Halaman ini dibuat sebagai ringkasan interaktif tentang latar pendidikan, keahlian, dan minat saya.</p>
+      </section>
+
+      <section id="pendidikan" class="card" tabindex="0">
+        <h3>Jenjang Pendidikan</h3>
+        <ol>
+          <li><strong>SD</strong> — SD Kyai Ibrahim. <a class="school-link" href="https://sdkyaiibrahim.com/" target="_blank" rel="noopener">Lihat website SD Kyai Ibrahim</a></li>
+          <li><strong>SMP</strong> — SMP Bina Insan Mandiri. <a class="school-link" href="https://binainsanikediri.sch.id/" target="_blank" rel="noopener">Lihat website SMP Bina Insan Mandiri</a></li>
+          <li><strong>SMK</strong> — SMKN 1 KEDIRI. <a class="school-link" href="https://smkn1kediri.sch.id/" target="_blank" rel="noopener">Lihat website SMKN 1 KEDIRI</a></li>
+        </ol>
+      </section>
+
+      <section id="keahlian" class="card" tabindex="0">
+        <h3>Keahlian &amp; Hobi (Untuk Pendidikan)</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Keahlian</h4>
+            <ul>
+              <li>Merakit dan merawat perangkat keras komputer (PC assembly & troubleshooting)</li>
+              <li>Instalasi & konfigurasi sistem operasi (Windows/Linux) dan layanan jaringan dasar (DHCP, DNS, FTP, Web server)</li>
+              <li>Dasar konfigurasi jaringan: LAN, VLAN, routing statis, NAT dan firewall sederhana</li>
+              <li>Dasar administrasi server, backup ringan, dan troubleshooting jaringan</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Hobi yang Mendukung Pembelajaran</h4>
+            <ul>
+              <li>Praktik konfigurasi jaringan dan bereksperimen dengan server lokal</li>
+              <li>Belajar pemrograman skrip sederhana (bash, Python dasar) untuk automasi tugas</li>
+              <li>Membaca artikel jaringan & mengikuti forum teknis</li>
+              <li>Ikut proyek kelompok atau kompetisi IT sekolah</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="tkj" class="card" tabindex="0">
+        <h3>Apa itu TKJ (Teknik Komputer &amp; Jaringan)?</h3>
+        <p>Jurusan Teknik Komputer &amp; Jaringan (TKJ) mempelajari perangkat keras, sistem operasi, dan perancangan serta pemeliharaan jaringan komputer. Kurikulum SMKN 1 Kediri juga mencakup praktik server, instalasi jaringan, keamanan dasar, dan layanan jaringan yang umum dipakai industri.</p>
+        <p><a class="school-link" href="https://smkn1kediri.sch.id/kompetensi-keahlian/teknik-jaringan-komputer-dan-telekomunikasi/" target="_blank" rel="noopener">Pelajari detail TKJ di SMKN 1 KEDIRI</a></p>
+      </section>
+
+      <section id="sekolah-links" class="card" tabindex="0">
+        <h3>6 Tautan Penting</h3>
+        <ol>
+          <li><a href="https://sdkyaiibrahim.com/" target="_blank" rel="noopener">SD Kyai Ibrahim — website resmi</a></li>
+          <li><a href="https://binainsanikediri.sch.id/" target="_blank" rel="noopener">SMP Bina Insan Mandiri — website resmi</a></li>
+          <li><a href="https://smkn1kediri.sch.id/" target="_blank" rel="noopener">SMKN 1 KEDIRI — website resmi</a></li>
+          <li><a href="https://smkn1kediri.sch.id/kompetensi-keahlian/teknik-jaringan-komputer-dan-telekomunikasi/" target="_blank" rel="noopener">Halaman TKJ di SMKN 1 KEDIRI</a></li>
+          <li><a href="https://www.instagram.com/smkn1kotakediri.official/" target="_blank" rel="noopener">Instagram SMKN 1 KEDIRI</a></li>
+          <li><a href="mailto:smkn1.kediri@gmail.com">Email SMKN 1 KEDIRI</a></li>
+        </ol>
+      </section>
+
+      <section id="kontak" class="card" tabindex="0">
+        <h3>Kontak &amp; Catatan</h3>
+        <p>Untuk informasi resmi tentang program, jadwal, atau pendaftaran, klik tautan sekolah di atas atau hubungi alamat email: <a href="mailto:smkn1.kediri@gmail.com">smkn1.kediri@gmail.com</a>.</p>
+        <p class="sr-only">Halaman ini dibuat untuk tujuan profil pribadi dan pendidikan. Tidak menyertakan foto profil sesuai permintaan.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; 2025 Brilian Oby — dibuat dengan bantuan halaman interaktif
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll + active nav highlight
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(!el) return;
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        // set focus for accessibility
+        setTimeout(()=>el.focus(),400);
+      });
+    });
+
+    // highlight active section in nav while scrolling
+    const sections = Array.from(document.querySelectorAll('main section'));
+    const navBtns = Array.from(document.querySelectorAll('nav a'));
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(ent=>{
+        const idx = sections.indexOf(ent.target);
+        if(ent.isIntersecting){
+          navBtns.forEach(n=>n.classList.remove('active'));
+          if(navBtns[idx]) navBtns[idx].classList.add('active');
+        }
+      });
+    }, {threshold:0.45});
+    sections.forEach(s=>obs.observe(s));
+
+    // keyboard shortcut: press 'g' then letter to jump (g + a = about)
+    const jumpMap = {a:'#about',p:'#pendidikan',k:'#keahlian',t:'#tkj',s:'#sekolah-links',c:'#kontak'};
+    let waitingFor = null;
+    window.addEventListener('keydown', e=>{
+      if(e.key.toLowerCase()==='g') { waitingFor=true; return; }
+      if(waitingFor){
+        const target = jumpMap[e.key.toLowerCase()];
+        if(target){ document.querySelector(target).scrollIntoView({behavior:'smooth'}); document.querySelector(target).focus(); }
+        waitingFor = null;
+      }
+    });
+  </script>
+</body>
+</html>
